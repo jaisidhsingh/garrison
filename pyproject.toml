@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
+    "flash-linear-attention",
     "nemo-automodel",
 ]
 
@@ -21,7 +22,9 @@ build-backend = "uv_build"
 [tool.uv.workspace]
 members = [
     "lib/nemotron_base",
+    "lib/flash-linear-attention",
 ]
 
 [tool.uv.sources]
 nemo-automodel = { workspace = true, editable = true }
+flash-linear-attention = { workspace = true, editable = true }
